@@ -196,15 +196,6 @@
     font-style: italic;
     line-height: 1.4;
   }
-  .q-optional {
-    font-size: 11px;
-    color: var(--green-light);
-    font-weight: 500;
-    margin-left: auto;
-    padding-left: 8px;
-    white-space: nowrap;
-    margin-top: 1px;
-  }
 
   /* ── TEXTAREA / INPUT ── */
   textarea, input[type=text], input[type=email], input[type=tel] {
@@ -389,21 +380,21 @@
 
       <div class="field-row">
         <div>
-          <div class="field-label">Naziv OPG-a <span>(opcionalno)</span></div>
+          <div class="field-label">Naziv OPG-a</div>
           <input type="text" id="opg_naziv" placeholder="npr. OPG Marković">
         </div>
         <div>
-          <div class="field-label">Vaše ime <span>(opcionalno)</span></div>
+          <div class="field-label">Vaše ime</div>
           <input type="text" id="kontakt_ime" placeholder="Ime i prezime">
         </div>
       </div>
       <div class="field-row">
         <div>
-          <div class="field-label">Email <span>(opcionalno)</span></div>
+          <div class="field-label">Email</div>
           <input type="email" id="kontakt_email" placeholder="vas@email.hr">
         </div>
         <div>
-          <div class="field-label">Telefon <span>(opcionalno)</span></div>
+          <div class="field-label">Telefon</div>
           <input type="tel" id="kontakt_telefon" placeholder="09x xxx xxxx">
         </div>
       </div>
@@ -425,7 +416,6 @@
         <div class="q-label">
           <span class="q-num">1</span>
           Koliko dugo poslujete i kako je nastao vaš OPG?
-          <span class="q-optional">opcionalno</span>
         </div>
         <div class="q-hint">Što vas je navelo da krenete? Je li to obiteljska tradicija, nova ideja, ili nešto sasvim drugačije?</div>
         <textarea id="q1" placeholder="Ispričajte nam svoju priču o počecima..."></textarea>
@@ -435,7 +425,6 @@
         <div class="q-label">
           <span class="q-num">2</span>
           Što vas je najviše motiviralo da ostanete u ovom poslu do danas?
-          <span class="q-optional">opcionalno</span>
         </div>
         <div class="q-hint">Što vas drži, u lijepim i teškim trenucima?</div>
         <textarea id="q2" placeholder="Vaša motivacija i razlog zašto nastavljate..."></textarea>
@@ -449,7 +438,6 @@
         <div class="q-label">
           <span class="q-num">3</span>
           Kako izgleda jedan tipičan dan u vašoj proizvodnji?
-          <span class="q-optional">opcionalno</span>
         </div>
         <div class="q-hint">Od jutra do večeri — što se dogodi na vašem imanju?</div>
         <textarea id="q3" placeholder="Opišite nam jedan vaš radni dan..."></textarea>
@@ -459,7 +447,6 @@
         <div class="q-label">
           <span class="q-num">4</span>
           Po čemu su vaši proizvodi posebni u odnosu na druge?
-          <span class="q-optional">opcionalno</span>
         </div>
         <div class="q-hint">Što razlikuje ono što vi radite od svega ostalog na tržištu?</div>
         <textarea id="q4" placeholder="Što je to što čini vaše proizvode posebnima..."></textarea>
@@ -469,7 +456,6 @@
         <div class="q-label">
           <span class="q-num">5</span>
           Koji je vaš najpoznatiji proizvod i zašto ga kupci vole?
-          <span class="q-optional">opcionalno</span>
         </div>
         <div class="q-hint">Koji proizvod kupci uvijek traže i zašto se vraćaju po njega?</div>
         <textarea id="q5" placeholder="Vaš najdraži ili najprodavaniji proizvod..."></textarea>
@@ -483,7 +469,6 @@
         <div class="q-label">
           <span class="q-num">6</span>
           Kada biste opisali svoj OPG u jednoj rečenici — što bi pisalo?
-          <span class="q-optional">opcionalno</span>
         </div>
         <div class="q-hint">Zamislite da je to vaš slogan ili naslov Instagram profila.</div>
         <textarea id="q6" placeholder="Jedna rečenica koja opisuje sve što radite..." style="min-height: 64px;"></textarea>
@@ -493,7 +478,6 @@
         <div class="q-label">
           <span class="q-num">7</span>
           Ima li neka posebna uspomena, trenutak ili priča vezana uz vaš posao koja vam je ostala u srcu?
-          <span class="q-optional">opcionalno</span>
         </div>
         <div class="q-hint">Nešto što biste rado podijelili s drugima — smiješno, dirljivo ili nezaboravno.</div>
         <textarea id="q7" placeholder="Podijelite s nama nešto posebno..."></textarea>
@@ -503,7 +487,6 @@
         <div class="q-label">
           <span class="q-num">8</span>
           Imate li fotografija vaše proizvodnje, farme ili proizvoda koje bismo mogli koristiti?
-          <span class="q-optional">opcionalno</span>
         </div>
         <div class="q-hint">Autentične fotografije jako pomažu — bile bi korištene isključivo za promovciju vašeg OPG-a.</div>
         <div class="radio-group" id="q8">
@@ -532,7 +515,7 @@
 </div><!-- /.content -->
 
 <script>
-const SCRIPT_URL = "REPLACE_WITH_APPS_SCRIPT_URL";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwhtdOZvVYio4FkDLbqxMGeZw9px0efzxwDYH8e-KZYWeXSuEPmpzpHuWqmprK6v9-GnA/exec";
 
 const answers = {};
 
